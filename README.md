@@ -11,11 +11,6 @@ Welcome to the AcmeRockets project! This repository houses the codebase for a ca
 
 <!-- Include a screenshot, video, or gif showcasing the website's appearance and functionality. This provides potential contributors and users with a visual overview of the project. -->
 
-**Screenshot:**
-<img width="1339" alt="Screenshot 2024-01-16 at 12 21 35 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/3a88dc73-23b5-41eb-bc58-f6a439003d54">
-<img width="1374" alt="Screenshot 2024-01-16 at 12 22 00 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/84096af8-069e-48a1-b05e-8f997beccfa4">
-<img width="1316" alt="Screenshot 2024-01-16 at 12 22 20 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/9db31346-07de-496a-86d8-1f63cbee7745">
-
 <!-- If you have a demo video or gif, you can provide a link or embed it here. -->
 
 ### Features ###
