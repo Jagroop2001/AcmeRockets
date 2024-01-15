@@ -1,11 +1,11 @@
-# AcmeRockets Website
+# AcmeRockets Website #
 <img width="1246" alt="Screenshot 2024-01-16 at 12 15 28 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/afdeead9-2900-4bad-bbef-8e1ee3e248ba">
-## Project Details
+## Project Details##
 <img width="183" alt="Screenshot 2024-01-16 at 12 16 00 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/9b2d98cd-af03-4ed4-ba2d-ac2dab5c6a4b">
-htyear.
+
 Welcome to the AcmeRockets project! This repository houses the codebase for a captivating static website dedicated to showcasing the innovative rocket-powered products of Acme Rockets. Whether you're an aerospace enthusiast or a curious visitor, this project aims to deliver an immersive experience with its dynamic content and responsive design.
 
-### Demo
+### Demo ###
 
 <!-- Include a screenshot, video, or gif showcasing the website's appearance and functionality. This provides potential contributors and users with a visual overview of the project. -->
 
@@ -14,7 +14,7 @@ Welcome to the AcmeRockets project! This repository houses the codebase for a ca
 
 <!-- If you have a demo video or gif, you can provide a link or embed it here. -->
 
-### Features
+### Features ###
 
 - **Responsive Design**: Enjoy a seamless browsing experience on various devices.
 - **Navigation**: Effortlessly explore different sections of the website using the intuitive navigation bar and mobile menu.
@@ -22,15 +22,15 @@ Welcome to the AcmeRockets project! This repository houses the codebase for a ca
 - **Testimonials**: Read testimonials from customers, including renowned figures such as Wile E. Coyote and Buzz Lig
 - **Contact Form**: Interact with Acme Rockets by using the contact form for inquiries or feedback.
 
-## Getting Started
+## Getting Started ##
 
-### Prerequisites
+### Prerequisites ##
 
 To run the AcmeRockets website locally, ensure you have the following:
 
 - Web Browser (Chrome, Firefox, Safari, etc.)
 
-### Installation
+### Installation ###
 
 1. Clone the repository:
 
@@ -40,7 +40,7 @@ To run the AcmeRockets website locally, ensure you have the following:
 
 2. Open the `index.html` file in your preferred web browser.
 
-## Usage
+## Usage ##
 
 Explore the different sections of the website:
 
@@ -51,7 +51,7 @@ Explore the different sections of the website:
 
 <!-- Include any additional instructions or information for users here. -->
 
-## Contribution Guidelines
+## Contribution Guidelines ##
 
 We welcome contributions from the community to enhance and improve the AcmeRockets project. To contribute, please follow these guidelines:
 
@@ -61,20 +61,19 @@ We welcome contributions from the community to enhance and improve the AcmeRocke
 4. Push to the branch: `git push origin feature/your-feature-name`.
 5. Open a pull request and describe your changes.
 
-### Code Style
+### Code Style ###
 
 Please adhere to the existing code style and formatting conventions.
 
-### Issue Tracker
+### Issue Tracker ###
 
 Before working on new features or fixes, check the [issue tracker](https://github.com/yourusername/AcmeRockets/issues) for existing issues or feature requests.
 
-### Code of Conduct
+### Code of Conduct ###
 
 Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive and inclusive community.
 
-## License
-
+## License ##
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
 
 <!-- Include any additional sections or information relevant to the project. -->
