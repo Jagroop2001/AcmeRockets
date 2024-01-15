@@ -21,9 +21,17 @@ Welcome to the AcmeRockets project! This repository houses the codebase for a ca
 ### Features ###
 
 - **Responsive Design**: Enjoy a seamless browsing experience on various devices.
+<img width="299" alt="Screenshot 2024-01-16 at 12 24 06 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/cf6b0e90-4c1f-4696-b934-42e00eb1afd0">
+
 - **Navigation**: Effortlessly explore different sections of the website using the intuitive navigation bar and mobile menu.
+<img width="919" alt="Screenshot 2024-01-16 at 12 25 06 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/9b06941f-6d40-44ca-bc5c-a61ed30bbf09">
+
 - **Product Showcase**: Dive into details about Acme Rockets' rocket models, complete with pricing information.
+<img width="1083" alt="Screenshot 2024-01-16 at 12 25 29 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/f9845598-5f8a-4493-9a09-e1221377ebe4">
+
 - **Testimonials**: Read testimonials from customers, including renowned figures such as Wile E. Coyote and Buzz Lig
+<img width="962" alt="Screenshot 2024-01-16 at 12 26 00 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/76334cf1-525e-40ad-8d46-6770d33b50fa">
+
 - **Contact Form**: Interact with Acme Rockets by using the contact form for inquiries or feedback.
 
 ## Getting Started ##
@@ -61,9 +69,11 @@ We welcome contributions from the community to enhance and improve the AcmeRocke
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -m 'Add a new feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Open a pull request and describe your changes.
+3. Ask For Assigning.
+4. First come first serve basis.
+5. Make your changes and commit them: `git commit -m 'Add a new feature'`.
+6. Push to the branch: `git push origin feature/your-feature-name`.
+7. Open a pull request and describe your changes.
 
 ### Code Style ###
 
