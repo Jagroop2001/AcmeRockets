@@ -3,7 +3,7 @@
 
 ## Project Details ##
 
-<img width="183" alt="Screenshot 2024-01-16 at 12 16 00 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/9b2d98cd-af03-4ed4-ba2d-ac2dab5c6a4b">
+<img width="638" alt="Screenshot 2024-01-16 at 12 21 10 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/7fd5271e-b4eb-43ff-b4f2-3e2850d5673c">
 
 Welcome to the AcmeRockets project! This repository houses the codebase for a captivating static website dedicated to showcasing the innovative rocket-powered products of Acme Rockets. Whether you're an aerospace enthusiast or a curious visitor, this project aims to deliver an immersive experience with its dynamic content and responsive design.
 
@@ -12,7 +12,9 @@ Welcome to the AcmeRockets project! This repository houses the codebase for a ca
 <!-- Include a screenshot, video, or gif showcasing the website's appearance and functionality. This provides potential contributors and users with a visual overview of the project. -->
 
 **Screenshot:**
-![AcmeRockets Website](./demo/screenshot.png)
+<img width="1339" alt="Screenshot 2024-01-16 at 12 21 35 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/3a88dc73-23b5-41eb-bc58-f6a439003d54">
+<img width="1374" alt="Screenshot 2024-01-16 at 12 22 00 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/84096af8-069e-48a1-b05e-8f997beccfa4">
+<img width="1316" alt="Screenshot 2024-01-16 at 12 22 20 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/9db31346-07de-496a-86d8-1f63cbee7745">
 
 <!-- If you have a demo video or gif, you can provide a link or embed it here. -->
 
