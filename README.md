@@ -1,6 +1,7 @@
 # AcmeRockets Website #
 <img width="1246" alt="Screenshot 2024-01-16 at 12 15 28 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/afdeead9-2900-4bad-bbef-8e1ee3e248ba">
-## Project Details##
+## Project Details ##
+
 <img width="183" alt="Screenshot 2024-01-16 at 12 16 00 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/9b2d98cd-af03-4ed4-ba2d-ac2dab5c6a4b">
 
 Welcome to the AcmeRockets project! This repository houses the codebase for a captivating static website dedicated to showcasing the innovative rocket-powered products of Acme Rockets. Whether you're an aerospace enthusiast or a curious visitor, this project aims to deliver an immersive experience with its dynamic content and responsive design.
