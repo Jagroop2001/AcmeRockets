@@ -72,7 +72,7 @@
       </h2>
       <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
         <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 cursor-pointer">
           <img src="./img/rocketman.png" alt="Explorer" class="mb-6 w-1/2" />
           <h3 class="text-center text-3xl text-slate-900 dark:text-white">
             Explorer
@@ -80,12 +80,12 @@
           <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block">
             $
           </p>
-          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
+          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden cursor-pointer">
             Affordable Exploration
           </p>
         </li>
         <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 cursor-pointer">
           <img src="./img/rocketride.png" alt="Adventurer" class="mb-6 w-1/2" />
           <h3 class="text-center text-3xl text-slate-900 dark:text-white">
             Adventurer
@@ -98,7 +98,7 @@
           </p>
         </li>
         <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 cursor-pointer">
           <img src="./img/rocketlaunch.png" alt="Infinity" class="mb-6 w-1/2" />
           <h3 class="text-center text-3xl text-slate-900 dark:text-white">
             Infinity
@@ -173,6 +173,15 @@
         Contact Us
       </h2>
       <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
+        <label for="subject">Name:</label>
+        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Name:"
+          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
+        <label for="subject">Ph Number:</label>
+        <input type="number" id="subject" name="subject"  maxlength="10" placeholder="Your Number:"
+          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
+        <label for="subject">Email:</label>
+        <input type="email" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your email:"
+          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
         <label for="subject">Subject:</label>
         <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
           class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
