@@ -1292,6 +1292,7 @@ video {
   }
 }
 
+
 .fa-facebook {
   background: #3b5998;
   color: white;
@@ -1335,4 +1336,14 @@ video {
 .hover-effect:hover {
   color: #0aeec8; /* Change this color to your desired hover color */
   text-decoration: underline;
+
+#rockets li {
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#rockets li:hover {
+  background-color: red; 
+  transform: scale(1.09); 
+
 }
