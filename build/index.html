@@ -8,7 +8,7 @@
   <style>
     a:hover {
       opacity: 0.9;
-      color: #b6d919; 
+      color: #b6d919;
     }
   </style>
   <title>Acme Rockets</title>
@@ -180,16 +180,15 @@
         Contact Us
       </h2>
       <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
-        <button
-          class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
-          Submit
-        </button>
+        <<label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required minlength="3" maxlength="60"
+            placeholder="Your Subject"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
+          <input type="submit" value="Submit" name="submit"
+            class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none" />
       </form>
     </section>
   </main>
@@ -215,6 +214,23 @@
       </div>
     </section>
   </footer>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxsK3h5yTiJAXXsERmhpPTV1o5potl-0Mx1WNWm4fpiNm7PepJHonV-Mz35ljDAfBchoQ/exec";
+    const form = document.forms["google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "post", body: new FormData(form) })
+        .then((response) =>
+          alert("Thanks for Contacting us..! We Will Contact You Soon...")
+        )
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 
 </html>
