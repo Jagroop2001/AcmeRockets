@@ -1457,5 +1457,22 @@ body{
   text-decoration: underline;
 }
 
+#goToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:rgb(13, 0, 193);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  height: 4rem;
+  width: 5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#goToTopBtn:hover{
+  background-color: rgb(103, 103, 247);
 }
 
