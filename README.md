@@ -90,7 +90,7 @@ Please adhere to the existing code style and formatting conventions.
 
 ### Issue Tracker ###
 
-Before working on new features or fixes, check the [issue tracker](https://github.com/yourusername/AcmeRockets/issues) for existing issues or feature requests.
+Before working on new features or fixes, check the [issue tracker](https://github.com/Jagroop2001/AcmeRockets/issues) for existing issues or feature requests.
 
 ### Code of Conduct ###
 
