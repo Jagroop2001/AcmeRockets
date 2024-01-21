@@ -8,13 +8,26 @@
   <style>
     a:hover {
       opacity: 0.9;
-      color: #b6d919; 
+      color: #b6d919;
     }
   </style>
   <title>Acme Rockets</title>
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/testimonial.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="js/main.js" defer></script>
+  <script src="js/testimonial.js" defer></script>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -34,14 +47,29 @@
           <a href="#rockets" class="hover:opacity-90 hover:text-blue-500">Our Rockets</a>
           <a href="#testimonials" class="hover:opacity-90 hover:text-blue-500">Testimonials</a>
           <a href="#contact" class="hover:opacity-90 hover:text-blue-500">Contact Us</a>
+          <button id="theme-toggle" type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+          </button>
         </nav>
       </div>
     </section>
     <section id="mobile-menu"
       class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
       <!-- <button class="text-8xl self-end px-6">
+
                 &times;
             </button> -->
+
       <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
         <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
         <a href="#rockets" class="w-full py-6 text-center hover:opacity-90">Our Rockets</a>
@@ -79,7 +107,7 @@
       </h2>
       <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
         <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 cursor-pointer">
           <img src="./img/rocketman.png" alt="Explorer" class="mb-6 w-1/2" />
           <h3 class="text-center text-3xl text-slate-900 dark:text-white">
             Explorer
@@ -87,12 +115,12 @@
           <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block">
             $
           </p>
-          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
+          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden cursor-pointer">
             Affordable Exploration
           </p>
         </li>
         <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 cursor-pointer">
           <img src="./img/rocketride.png" alt="Adventurer" class="mb-6 w-1/2" />
           <h3 class="text-center text-3xl text-slate-900 dark:text-white">
             Adventurer
@@ -105,7 +133,7 @@
           </p>
         </li>
         <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 cursor-pointer">
           <img src="./img/rocketlaunch.png" alt="Infinity" class="mb-6 w-1/2" />
           <h3 class="text-center text-3xl text-slate-900 dark:text-white">
             Infinity
@@ -127,51 +155,55 @@
       <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
         Testimonials
       </h2>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            Acme has always been there for me. Their Explorer rocket arrived
-            in a wooden crate as expected. Life-long customer! A++ shopping
-            experience.
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Wile E. Coyote, Genius
-        </figcaption>
-      </figure>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
-            Space Modulator on several occassions.
-            <span class="italic">This makes me very, very angry!</span>
-            Nevertheless, K-9 and I have awarded Acme the Martian contract for
-            space exploration rockets based on Acme's quality and sturdy
-            designs.
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Marvin The Martian &amp; K-9
-        </figcaption>
-      </figure>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            I knew I not only wanted &#8212;
-            <span class="italic">I needed</span> &#8212; Acme's Infinity
-            Rocket for my mission in space. Acme delivered in one day! Nothing
-            says <q class="italic">Take me to your leader</q> like Acme's
-            Infinity Rocket! 💯
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Buzz Lightyear
-        </figcaption>
-      </figure>
+      <section id="testim" class="testim">
+        <div class="wrap">
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+          <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+
+          </ul>
+          <div id="testim-content" class="cont">
+            <div class="active">
+              <h2>&#8212;Wile E. Coyote, Genius</h2>
+              <p>
+                "Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected.
+                Life-long customer! A++ shopping experience."
+              </p>
+            </div>
+
+            <div>
+              <h2>&#8212;Marvin The Martian &amp; K-9</h2>
+              <p>
+                "The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
+                Space Modulator on several occassions.
+                <span class="italic">This makes me very, very angry!</span>
+                Nevertheless, K-9 and I have awarded Acme the Martian contract for
+                space exploration rockets based on Acme's quality and sturdy
+                designs."
+              </p>
+            </div>
+
+            <div>
+              <h2> &#8212;Buzz Lightyear</h2>
+              <p>
+                "I knew I not only wanted &#8212;
+                <span class="italic">I needed</span> &#8212; Acme's Infinity
+                Rocket for my mission in space. Acme delivered in one day! Nothing
+                says <q class="italic">Take me to your leader</q> like Acme's
+                Infinity Rocket! 💯"
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--         </div> -->
+      </section>
+
     </section>
+
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
 
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
@@ -186,35 +218,73 @@
         <label for="message">Message:</label>
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
           class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
-        <button
-          class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
-          Submit
-        </button>
+        <input type="submit" value="Submit" name="submit"
+          class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none" />
       </form>
     </section>
   </main>
 
   <footer id="footer" class="bg-teal-700 text-xl text-white">
-    <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
-      <address>
-        <h2>Acme Rocket-Powered Products, Inc.</h2>
-        555 Astro Way<br />
-        Fairfield, New Jersey 12345-5555<br />
-        Email:
-        <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a><br />
-        Phone: <a href="tel:+15555555555">(555) 555-5555</a>
-      </address>
-      <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
-        <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
-        <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-        <a href="#contact" class="hover:opacity-90">Contact Us</a>
-      </nav>
-      <div class="flex flex-col sm:gap-2">
-        <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
-        <p class="text-right">All Rights Reserved</p>
+    <section class="" style="padding:50px 100px 50px 100px; display: flex;">
+      <div style="flex: 1; gap: 5px;">
+        <div class="flex align-items gap-4">
+          <img src="../favicon.ico" alt="">
+          <h1 class="text-2xl text-black">AcmeRockets</h1>
+        </div>
+        <p>We're building rockets for the next century today. From the moon to Mars, Jupiter and beyond...</p>
+        <div style="padding-top: 1rem;">
+          <a href="#"><i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i></a>
+          <a href="#"><i class="fa-brands fa-github" style="font-size: 1.25em;margin: 2px;"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin" style="font-size: 1.25em;margin: 2px;"></i></a>
+        </div>
       </div>
+
+
+      </div>
+      <div style="flex: 1; display:flex; flex-direction: column ; align-items: center; gap:5px;">
+        <h1 class="text-3xl text-black">Quick links</h1>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items:center;">
+          <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </div>
+
+      </div>
+      <div>
+        <address style="flex: 1;">
+          <h1 class="text-3xl text-black">Contact</h1>
+          <h2>Acme Rocket-Powered Products, Inc.</h2>
+          555 Astro Way<br />
+          Fairfield, New Jersey 12345-5555<br />
+          Email:
+          <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a><br />
+          Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+        </address>
     </section>
   </footer>
+
+
+  <!-- go to top section -->
+  <button id="goToTopBtn" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/GoToTop.js"></script>
+  <!-- go to top section -->
+
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbxsK3h5yTiJAXXsERmhpPTV1o5potl-0Mx1WNWm4fpiNm7PepJHonV-Mz35ljDAfBchoQ/exec";
+    const form = document.forms["google-sheet"];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "post", body: new FormData(form) })
+        .then((response) =>
+          alert("Thanks for Contacting us..! We Will Contact You Soon...")
+        )
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
