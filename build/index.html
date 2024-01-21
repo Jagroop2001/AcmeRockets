@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="sm:scroll-smooth">
-
+  
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,8 +14,10 @@
   <title>Acme Rockets</title>
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/testimonial.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="js/main.js" defer></script>
+  <script src="js/testimonial.js" defer></script>
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -53,8 +55,10 @@
     <section id="mobile-menu"
       class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
       <!-- <button class="text-8xl self-end px-6">
+
                 &times;
             </button> -->
+
       <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
         <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
         <a href="#rockets" class="w-full py-6 text-center hover:opacity-90">Our Rockets</a>
@@ -135,86 +139,112 @@
 
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-    <section id="testimonials"
-      class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
-      <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
-        Testimonials
-      </h2>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            Acme has always been there for me. Their Explorer rocket arrived
-            in a wooden crate as expected. Life-long customer! A++ shopping
-            experience.
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Wile E. Coyote, Genius
-        </figcaption>
-      </figure>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
-            Space Modulator on several occassions.
-            <span class="italic">This makes me very, very angry!</span>
-            Nevertheless, K-9 and I have awarded Acme the Martian contract for
-            space exploration rockets based on Acme's quality and sturdy
-            designs.
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Marvin The Martian &amp; K-9
-        </figcaption>
-      </figure>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            I knew I not only wanted &#8212;
-            <span class="italic">I needed</span> &#8212; Acme's Infinity
-            Rocket for my mission in space. Acme delivered in one day! Nothing
-            says <q class="italic">Take me to your leader</q> like Acme's
-            Infinity Rocket! 💯
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Buzz Lightyear
-        </figcaption>
-      </figure>
-    </section>
+    <section
+        id="testimonials"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          Testimonials
+        </h2>
+        <section id="testim" class="testim">
+          <div class="wrap">
+            <span
+              id="right-arrow"
+              class="arrow right fa fa-chevron-right"
+            ></span>
+            <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+            <ul id="testim-dots" class="dots">
+              <li class="dot active"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              
+            </ul>
+            <div id="testim-content" class="cont">
+              <div class="active">
+                <h2>&#8212;Wile E. Coyote, Genius</h2>
+                <p>
+                  "Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected. Life-long customer! A++ shopping experience."
+                </p>
+              </div>
 
-    <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+              <div>
+                <h2>&#8212;Marvin The Martian &amp; K-9</h2>
+                <p>
+                  "The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
+              Space Modulator on several occassions.
+              <span class="italic">This makes me very, very angry!</span>
+              Nevertheless, K-9 and I have awarded Acme the Martian contract for
+              space exploration rockets based on Acme's quality and sturdy
+              designs."
+                </p>
+              </div>
 
-    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6">
-      <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
-        Contact Us
-      </h2>
-      <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
-        <label for="subject">Name:</label>
-        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Name"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Email:</label>
-        <input type="email" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Email"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Number:</label>
-        <input type="number" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Number"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
-        <button
-          class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
-          Submit
-        </button>
-      </form>
-    </section>
-  </main>
+              <div>
+                <h2> &#8212;Buzz Lightyear</h2>
+                <p>
+                  "I knew I not only wanted &#8212;
+              <span class="italic">I needed</span> &#8212; Acme's Infinity
+              Rocket for my mission in space. Acme delivered in one day! Nothing
+              says <q class="italic">Take me to your leader</q> like Acme's
+              Infinity Rocket! 💯"
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--         </div> -->
+        </section>
+        
+      </section>
+
+      <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+      <section
+        id="contact"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          Contact Us
+        </h2>
+        <form
+          action=""
+          class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl"
+        >
+          <<label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your Subject"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"
+          ></textarea>
+          <input
+            type="submit"
+            value="Submit"
+            name="submit"
+            class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none"
+          />
+        </form>
+      </section>
+    </main>
 
   <footer id="footer" class="bg-teal-700 text-xl text-white">
     <section class="" style="padding:50px 100px 50px 100px; display: flex;">
@@ -256,22 +286,22 @@
   </footer>
 
 
-  <script>
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbxsK3h5yTiJAXXsERmhpPTV1o5potl-0Mx1WNWm4fpiNm7PepJHonV-Mz35ljDAfBchoQ/exec";
-    const form = document.forms["google-sheet"];
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxsK3h5yTiJAXXsERmhpPTV1o5potl-0Mx1WNWm4fpiNm7PepJHonV-Mz35ljDAfBchoQ/exec";
+      const form = document.forms["google-sheet"];
 
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      fetch(scriptURL, { method: "post", body: new FormData(form) })
-        .then((response) =>
-          alert("Thanks for Contacting us..! We Will Contact You Soon...")
-        )
-        .catch((error) => console.error("Error!", error.message));
-    });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-</body>
-
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "post", body: new FormData(form) })
+          .then((response) =>
+            alert("Thanks for Contacting us..! We Will Contact You Soon...")
+          )
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
 </html>
+
+      
