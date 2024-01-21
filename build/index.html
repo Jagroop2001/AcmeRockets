@@ -15,6 +15,7 @@
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/testimonial.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="js/main.js" defer></script>
   <script src="js/testimonial.js" defer></script>
   <script>
@@ -245,103 +246,45 @@
       </section>
     </main>
 
-    <footer id="footer" class="bg-teal-700 text-xl text-white py-8">
-      <section
-        class="mx-auto flex flex-wrap max-w-6xl justify-between items-center"
-      >
-        <div class="w-full md:w-1/3 p-8 text-center footer-section">
-          <h2 class="text-2xl font-bold mb-2">Visit Us</h2>
-          <address class="text-teal-200">
-            <p>Acme Rocket-Powered Services, Inc.</p>
-            <p>555 Astro Way</p>
-            <p>Fairfield, NJ 12345-5555</p>
-          </address>
+  <footer id="footer" class="bg-teal-700 text-xl text-white">
+    <section class="" style="padding:50px 100px 50px 100px; display: flex;">
+      <div style="flex: 1; gap: 5px;" >
+        <div class="flex align-items gap-4">
+          <img src="../favicon.ico" alt="">
+        <h1 class="text-2xl text-black">AcmeRockets</h1>
+        </div>        
+        <p>We're building rockets for the next century today. From the moon to Mars, Jupiter and beyond...</p>
+        <div style="padding-top: 1rem;">
+        <a href="#"><i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i></a>
+        <a href="#"><i class="fa-brands fa-github" style="font-size: 1.25em;margin: 2px;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin" style="font-size: 1.25em;margin: 2px;"></i></a>
         </div>
+      </div>
+           
+      
+    </div>
+    <div style="flex: 1; display:flex; flex-direction: column ; align-items: center; gap:5px;">
+      <h1 class="text-3xl text-black">Quick links</h1>
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items:center;">
+      <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+      <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+      <a href="#contact" class="hover:opacity-90">Contact Us</a>
+      </div>
+      
+    </div>
+    <div>
+      <address style="flex: 1;">
+        <h1 class="text-3xl text-black">Contact</h1>
+        <h2>Acme Rocket-Powered Products, Inc.</h2>
+        555 Astro Way<br />
+        Fairfield, New Jersey 12345-5555<br />
+        Email:
+        <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a><br />
+        Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+      </address>
+    </section>
+  </footer>
 
-        <div class="w-full md:w-1/3 p-4 text-center footer-section">
-          <h2 class="text-2xl font-bold mb-2">Our Services</h2>
-          <ul class="flex flex-col gap-2" aria-label="footer">
-            <li>
-              <a href="#rockets" class="text-teal-200 hover-effect"
-                >Rocket Design</a
-              >
-            </li>
-            <li>
-              <a href="#testimonials" class="text-teal-200 hover-effect"
-                >Client Testimonials</a
-              >
-            </li>
-            <li>
-              <a href="#contact" class="text-teal-200 hover-effect"
-                >Get in Touch</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="w-full md:w-1/3 p-4 text-center footer-section">
-          <h2 class="text-2xl font-bold mb-2">Contact Information</h2>
-          <div class="text-teal-200">
-            <p>
-              Email:
-              <a
-                href="mailto:inquiries@acmerockets.com"
-                class="hover:text-teal-100"
-                >Inquiries@AcmeRockets.com</a
-              >
-            </p>
-            <p>
-              Phone:
-              <a href="tel:+15555555555" class="hover:text-teal-100"
-                >(555) 555-5555</a
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="mx-auto max-w-4xl p-4 text-center">
-        <div class="flex items-center justify-center gap-4 social-icons">
-          <!-- Social media icons with hover effect -->
-          <a href="#" class="fa fa-facebook hover:text-teal-100"></a>
-
-          <a href="#" class="fa fa-instagram hover:text-teal-100"></a>
-        </div>
-        <p class="text-teal-200 mt-4">
-          &copy; <span id="year">2024</span> Acme Rocket-Powered Services, Inc.
-          All Rights Reserved
-        </p>
-      </section>
-      <style>
-        /* Media Query for screens with a maximum width of 618px */
-        @media (max-width: 618px) {
-          #footer {
-            padding: 1rem;
-          }
-
-          .footer-section {
-            padding: 0.5rem;
-          }
-
-          .text-2xl {
-            font-size: 1.2rem;
-          }
-
-          .hover-effect:hover {
-            text-decoration: none;
-          }
-
-          /* Additional styles for better responsiveness in contact information section */
-          .text-teal-200 {
-            font-size: 0.9rem;
-          }
-
-          .footer-section p {
-            margin-bottom: 0.5rem;
-          }
-        }
-      </style>
-    </footer>
 
     <script>
       const scriptURL =
