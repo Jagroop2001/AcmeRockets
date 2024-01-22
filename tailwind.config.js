@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./build/*.html', "./build/js/*.js"],
-   theme: {
+  content: ["./build/**/*.{html,js}"],
+  theme: {
     extend: {
       screens: {
         'widescreen': { 'raw': '(min-aspect-ratio: 3/2)' },
