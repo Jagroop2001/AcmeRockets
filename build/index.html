@@ -187,32 +187,65 @@
 
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6">
-      <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
-        Contact Us
-      </h2>
-      <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
-        <label for="subject">Name:</label>
-        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Name"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Email:</label>
-        <input type="email" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Email"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Number:</label>
-        <input type="number" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Number"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
-        <button
-          class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
-          Submit
-        </button>
-      </form>
+    <!-- Contact Us -->
+    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6 antialiased">
+      <div class="flex min-h-screen w-full items-center justify-center">
+        <div class="flex w-full max-w-4xl flex-col space-y-6 overflow-hidden rounded-xl bg-teal-700 p-8 text-white shadow-lg sm:p-12 md:flex-row md:space-x-6 md:space-y-0">
+          <div class="flex flex-col justify-between space-y-8">
+            <div>
+              <h1 class="mb-6 text-center text-4xl font-bold sm:text-5xl text-white">Contact Us</h1>
+              <p class="text-md text-slate-200">Feel Free to drop us a message with any inquiries or feedback.We're here to assist you!</p>
+            </div>
+            <div class="flex flex-col space-y-6">
+              <div class="text-md inline-flex items-center space-x-2">
+                <ion-icon name="call" class="text-xl text-teal-400"></ion-icon>
+                <span>+ (555) 555-5555 </span>
+              </div>
+              <div class="text-md inline-flex items-center space-x-2">
+                <ion-icon name="mail" class="text-xl text-teal-400"></ion-icon>
+                <span>Inquires@AcmeRockets.com</span>
+              </div>
+              <div class="text-md inline-flex items-center space-x-2">
+                <ion-icon name="pin" class="text-xl text-teal-400"></ion-icon>
+                <span>Inc. 555 Astro Way Fairfield, New Jersey</span>
+              </div>
+            </div>
+            <div>
+              <a href="#"><ion-icon name="logo-facebook" class="text-2xl hover:text-cyan-200"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-linkedin" class="text-2xl hover:text-cyan-200" ></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter" class="text-2xl  hover:text-cyan-200"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram" class="text-2xl hover:text-cyan-200"></ion-icon></a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -right-28 -top-28 z-0 h-40 w-40 rounded-full bg-teal-400"></div>
+            <div class="absolute -bottom-16 -left-28 z-0 h-40 w-40 rounded-full bg-teal-400"></div>
+            <div class="relative z-1 rounded-xl bg-white p-8 text-gray-600 shadow-lg md:w-80">
+              <form action="" class="flex flex-col space-y-4">
+                <div>
+                  <label for="" class="text-sm">Your name</label>
+                  <input type="text" placeholder="Your name" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                </div>
+                <div>
+                  <label for="" class="text-sm">Email Address </label>
+                  <input type="email" placeholder="Your Email" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                </div>
+                <div>
+                  <label for="" class="text-sm">Mobile Number</label>
+                  <input type="phone" placeholder="Your number" rows="4" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                </div>
+                <div>
+                  <label for="" class="text-sm">Message</label>
+                  <textarea type="phone" placeholder="Your message" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600"></textarea>
+                </div>
+                <button class="inline-block self-end rounded-lg bg-teal-700 px-6 py-2 text-sm font-bold uppercase text-white">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    
   </main>
 
   <footer id="footer" class="bg-teal-700 text-xl text-white">
@@ -252,6 +285,7 @@
     });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
 </body>
 
