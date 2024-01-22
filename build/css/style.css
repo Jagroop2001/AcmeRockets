@@ -1272,3 +1272,56 @@ video {
   background-color: red; 
   transform: scale(1.09); 
 }
+
+
+#maindiv{
+  margin-top: 14px;
+  gap: 48px;
+}
+
+a:hover{
+     color: #97FFF4;
+}
+#abc{
+  height: 6px;
+}
+#abc2{
+  height: 6px;
+}
+#abc3{
+  height: 6px;
+}
+#pp:hover{
+  #abc{
+    
+    background-color: #97FFF4;
+    transform: scaleX(1.2);
+    transition:   transform 300ms ease-in;
+    cursor: pointer;
+    /* transform: scale(1.1,0.6); */
+    
+    
+  }
+}
+#pp2:hover{
+  #abc2{
+    background-color: #97FFF4;
+    transform: scaleX(1.2);
+    transition: transform 300ms ease-in;
+ 
+    cursor: pointer;
+    /* transform: scale(1.1,0.6); */
+    
+  }
+}
+#pp3:hover{
+  #abc3{
+    background-color: #97FFF4;
+    transform: scaleX(1.2);
+    transition: transform 200ms ease-in;
+    /* transform-origin: left; */
+    cursor: pointer;
+    /* transform: scale(1.1,0.6); */
+    
+  }
+}
