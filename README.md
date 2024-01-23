@@ -14,11 +14,11 @@
 - **Testimonials:** Read testimonials from customers, including renowned figures such as Wile E. Coyote and Buzz Lightyear! 🌟
 - **Contact Form:** Interact with Acme Rockets by using the ✉️ contact form for inquiries or feedback.
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-    <img src="./documentation_source/responsive.png" alt="Alt text" />
-    <img src="./documentation_source/products.png" alt="Alt text" />
-    <img src="./documentation_source/testimonials.png" alt="Alt text" />
-    <img src="./documentation_source/contact.png" alt="Alt text" />
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+    <img src="./documentation_source/responsive.png" alt="Alt text" style="width: 48%; max-width: 100%; height: auto;" />
+    <img src="./documentation_source/products.png" alt="Alt text" style="width: 48%; max-width: 100%; height: auto;" />
+    <img src="./documentation_source/testimonials.png" alt="Alt text" style="width: 48%; max-width: 100%; height: auto;" />
+    <img src="./documentation_source/contact.png" alt="Alt text" style="width: 48%; max-width: 100%; height: auto;" />
 </div>
 
 ---
