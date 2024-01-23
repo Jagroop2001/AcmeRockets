@@ -14,15 +14,25 @@
   <title>Acme Rockets</title>
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="mitlicense" href="mitLicense.html">
+  <link rel="codeofconduct" href="./codeofconduct.html">
+
+  <link rel="stylesheet" href="css/testimonial.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <script src="js/main.js" defer></script>
+  <script src="js/testimonial.js" defer></script>
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
+      document.documentElement.classList.add('dark');
     } else {
-        document.documentElement.classList.remove('dark')
+      document.documentElement.classList.remove('dark')
     }
-</script>
+  </script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -42,19 +52,31 @@
           <a href="#rockets" class="hover:opacity-90 hover:text-blue-500">Our Rockets</a>
           <a href="#about" class="hover:opacity-90 hover:text-blue-500">About Us</a>
           <a href="#testimonials" class="hover:opacity-90 hover:text-blue-500">Testimonials</a>
+          <a href="feedback.html" class="hover:opacity-90 hover:text-blue-500">Rate Us</a>
           <a href="#contact" class="hover:opacity-90 hover:text-blue-500">Contact Us</a>
-          <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-        </button>
+          <button id="theme-toggle" type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+          </button>
         </nav>
       </div>
     </section>
     <section id="mobile-menu"
       class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
       <!-- <button class="text-8xl self-end px-6">
+
                 &times;
             </button> -->
+
       <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
         <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
         <a href="#rockets" class="w-full py-6 text-center hover:opacity-90">Our Rockets</a>
@@ -155,80 +177,117 @@
       <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
         Testimonials
       </h2>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            Acme has always been there for me. Their Explorer rocket arrived
-            in a wooden crate as expected. Life-long customer! A++ shopping
-            experience.
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Wile E. Coyote, Genius
-        </figcaption>
-      </figure>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
-            Space Modulator on several occassions.
-            <span class="italic">This makes me very, very angry!</span>
-            Nevertheless, K-9 and I have awarded Acme the Martian contract for
-            space exploration rockets based on Acme's quality and sturdy
-            designs.
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Marvin The Martian &amp; K-9
-        </figcaption>
-      </figure>
-      <figure class="my-12">
-        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
-          <p
-            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
-            I knew I not only wanted &#8212;
-            <span class="italic">I needed</span> &#8212; Acme's Infinity
-            Rocket for my mission in space. Acme delivered in one day! Nothing
-            says <q class="italic">Take me to your leader</q> like Acme's
-            Infinity Rocket! 💯
-          </p>
-        </blockquote>
-        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
-          &#8212;Buzz Lightyear
-        </figcaption>
-      </figure>
+      <section id="testim" class="testim">
+        <div class="wrap">
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+          <ul id="testim-dots" class="dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+
+          </ul>
+          <div id="testim-content" class="cont">
+            <div class="active">
+              <h2>&#8212;Wile E. Coyote, Genius</h2>
+              <p>
+                "Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected.
+                Life-long customer! A++ shopping experience."
+              </p>
+            </div>
+
+            <div>
+              <h2>&#8212;Marvin The Martian &amp; K-9</h2>
+              <p>
+                "The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
+                Space Modulator on several occassions.
+                <span class="italic">This makes me very, very angry!</span>
+                Nevertheless, K-9 and I have awarded Acme the Martian contract for
+                space exploration rockets based on Acme's quality and sturdy
+                designs."
+              </p>
+            </div>
+
+            <div>
+              <h2> &#8212;Buzz Lightyear</h2>
+              <p>
+                "I knew I not only wanted &#8212;
+                <span class="italic">I needed</span> &#8212; Acme's Infinity
+                Rocket for my mission in space. Acme delivered in one day! Nothing
+                says <q class="italic">Take me to your leader</q> like Acme's
+                Infinity Rocket! 💯"
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--         </div> -->
+      </section>
+
     </section>
+
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
 
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6">
-      <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
-        Contact Us
-      </h2>
-      <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
-        <label for="subject">Name:</label>
-        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Name"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Email:</label>
-        <input type="email" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Email"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Number:</label>
-        <input type="number" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Number"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
-          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
-        <button
-          class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
-          Submit
-        </button>
-      </form>
+    <!-- Contact Us -->
+    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6 antialiased">
+      <div class="flex min-h-screen w-full items-center justify-center">
+        <div class="flex w-full max-w-4xl flex-col space-y-6 overflow-hidden rounded-xl bg-teal-700 p-8 text-white shadow-lg sm:p-12 md:flex-row md:space-x-6 md:space-y-0">
+          <div class="flex flex-col justify-between space-y-8">
+            <div>
+              <h1 class="mb-6 text-center text-4xl font-bold sm:text-5xl text-white">Contact Us</h1>
+              <p class="text-md text-slate-200">Feel Free to drop us a message with any inquiries or feedback.We're here to assist you!</p>
+            </div>
+            <div class="flex flex-col space-y-6">
+              <div class="text-md inline-flex items-center space-x-2">
+                <ion-icon name="call" class="text-xl text-teal-400"></ion-icon>
+                <span>+ (555) 555-5555 </span>
+              </div>
+              <div class="text-md inline-flex items-center space-x-2">
+                <ion-icon name="mail" class="text-xl text-teal-400"></ion-icon>
+                <span>Inquires@AcmeRockets.com</span>
+              </div>
+              <div class="text-md inline-flex items-center space-x-2">
+                <ion-icon name="pin" class="text-xl text-teal-400"></ion-icon>
+                <span>Inc. 555 Astro Way Fairfield, New Jersey</span>
+              </div>
+            </div>
+            <div>
+              <a href="#"><ion-icon name="logo-facebook" class="text-2xl hover:text-cyan-200"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-linkedin" class="text-2xl hover:text-cyan-200" ></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter" class="text-2xl  hover:text-cyan-200"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram" class="text-2xl hover:text-cyan-200"></ion-icon></a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -right-28 -top-28 z-0 h-40 w-40 rounded-full bg-teal-400"></div>
+            <div class="absolute -bottom-16 -left-28 z-0 h-40 w-40 rounded-full bg-teal-400"></div>
+            <div class="relative z-1 rounded-xl bg-white p-8 text-gray-600 shadow-lg md:w-80">
+              <form action="" class="flex flex-col space-y-4">
+                <div>
+                  <label for="" class="text-sm">Your name</label>
+                  <input type="text" placeholder="Your name" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                </div>
+                <div>
+                  <label for="" class="text-sm">Email Address </label>
+                  <input type="email" placeholder="Your Email" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                </div>
+                <div>
+                  <label for="" class="text-sm">Mobile Number</label>
+                  <input type="phone" placeholder="Your number" rows="4" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                </div>
+                <div>
+                  <label for="" class="text-sm">Message</label>
+                  <textarea type="phone" placeholder="Your message" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600"></textarea>
+                </div>
+                <button class="inline-block self-end rounded-lg bg-teal-700 px-6 py-2 text-sm font-bold uppercase text-white">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    
   </main>
 
   <footer id="footer" class="bg-teal-700 text-xl text-white">
@@ -249,9 +308,30 @@
       <div class="flex flex-col sm:gap-2">
         <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
         <p class="text-right">All Rights Reserved</p>
+        <p class="text-right">  <a href="./mitLicense.html">MIT License</a></p>
+        <p class="text-right"> <a href="./codeofconduct.html">Code Of Conduct</a></p>
+
+    <section class="" style="padding:50px 100px 50px 100px; display: flex;">
+      <div style="flex: 1; gap: 5px;">
+        <div style="padding-top: 1rem;">
+          <a href="#"><i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i></a>
+          <a href="#"><i class="fa-brands fa-github" style="font-size: 1.25em;margin: 2px;"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin" style="font-size: 1.25em;margin: 2px;"></i></a>
+        </div>
+      </div>
+
+
+
       </div>
     </section>
   </footer>
+
+
+  <!-- go to top section -->
+  <button id="goToTopBtn" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/GoToTop.js"></script>
+  <!-- go to top section -->
+
 
   <script>
     const scriptURL =
@@ -268,7 +348,8 @@
     });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 
 </html>
+
