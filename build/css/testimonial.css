@@ -21,7 +21,7 @@
 .testim .arrow {
     display: block;
     position: absolute;
-    color: #eee;
+    color: green;
     cursor: pointer;
     font-size: 2em;
     top: 50%;
@@ -140,7 +140,7 @@
 
 .testim .cont div p {
     font-size: 1.3em;
-    color: #eee;
+    color: red;
     width: 80%;
     margin: auto;
 }
@@ -587,3 +587,31 @@
 	}
 
 }
+.testim {
+    color: #3498db; /* Set text color to blue */
+  }
+  
+  .testim h2 {
+    color: #b6d919; /* Set testimonial author color to a contrasting color */
+  }
+  
+  .testim p {
+    color:pink; /* Set testimonial text color to a lighter shade */
+  }
+  
+  /* Remove the background color */
+  .testim {
+    background-color: transparent;
+  }
+  
+  /* Adjust the color of dots for better visibility */
+  .testim .dots .dot {
+    border-color: #eee;
+  }
+  
+  .testim .dots .dot.active,
+  .testim .dots .dot:hover {
+    background: #14a498;
+    border-color: #14a498;
+  }
+  
