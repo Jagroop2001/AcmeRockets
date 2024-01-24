@@ -1,106 +1,108 @@
-# AcmeRockets Website #
-<img width="1246" alt="Screenshot 2024-01-16 at 12 15 28 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/afdeead9-2900-4bad-bbef-8e1ee3e248ba">
+# Acme Rockets
 
-## Project Details ##
+**Welcome to AcmeRockets** – *where tech meets 🎨design*! Our repository hosts a dynamic, visually stunning static website showcasing **revolutionary 🚀rocket-powered products**. Ideal for 🌌aerospace enthusiasts and curious visitors, our project promises an immersive experience with *responsive design*.
 
-<img width="638" alt="Screenshot 2024-01-16 at 12 21 10 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/7fd5271e-b4eb-43ff-b4f2-3e2850d5673c">
+**Explore cutting-edge rocket tech**, with a sleek interface for seamless viewing across devices. Uncover the engineering marvels behind each rocket through **rich multimedia content**. Join us on a journey through *innovation* and the *future of 🚀space exploration*!
 
-Welcome to the AcmeRockets project! This repository houses the codebase for a captivating static website dedicated to showcasing the innovative rocket-powered products of Acme Rockets. Whether you're an aerospace enthusiast or a curious visitor, this project aims to deliver an immersive experience with its dynamic content and responsive design.
+![Website](documentation_source/website.png)
 
-### Demo ###
+## Features
 
-<img width="501" alt="Screenshot 2024-01-17 at 12 30 05 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/ca526696-e1dd-4c81-8105-08b54af24926">
+- **Responsive Design:** Enjoy a 🌐 seamless browsing experience on various devices.
+- **Navigation:** Effortlessly explore different sections of the website using the intuitive 🚀 navigation bar and mobile menu.
+- **Product Showcase:** Dive into details about Acme Rockets' rocket models, complete with 💲 pricing information.
+- **Testimonials:** Read testimonials from customers, including renowned figures such as Wile E. Coyote and Buzz Lightyear! 🌟
+- **Contact Form:** Interact with Acme Rockets by using the ✉️ contact form for inquiries or feedback.
 
-<img width="432" alt="Screenshot 2024-01-17 at 12 30 24 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/92f371d4-9db7-4295-bf1b-6f6e438abf0a">
-
-<img width="523" alt="Screenshot 2024-01-17 at 12 32 54 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/c67170da-782a-4544-bfc1-c20e78f452d9">
-
-<img width="556" alt="Screenshot 2024-01-17 at 12 33 31 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/3a660fe4-bf68-4763-94da-2aeb2dfbbc4c">
-
-
-
-### Features ###
-
-- **Responsive Design**: Enjoy a seamless browsing experience on various devices.
-<img width="299" alt="Screenshot 2024-01-16 at 12 24 06 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/cf6b0e90-4c1f-4696-b934-42e00eb1afd0">
+<div style="display: flex; justify-content: space-around;">
+    <img src="./documentation_source/responsive.png" alt="Alt text" style="width: 23%; max-width: 100%; height: auto;" />
+    <img src="./documentation_source/products.png" alt="Alt text" style="width: 23%; max-width: 100%; height: auto;" />
+    <img src="./documentation_source/testimonials.png" alt="Alt text" style="width: 23%; max-width: 100%; height: auto;" />
+    <img src="./documentation_source/contact.png" alt="Alt text" style="width: 23%; max-width: 100%; height: auto;" />
+</div>
 
 
+---
 
-- **Navigation**: Effortlessly explore different sections of the website using the intuitive navigation bar and mobile menu.
-<img width="919" alt="Screenshot 2024-01-16 at 12 25 06 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/9b06941f-6d40-44ca-bc5c-a61ed30bbf09">
+# Getting Started
+
+## Prerequisites
+
+- **Web Browser**:Ensure you have a modern web browser such as Chrome, Firefox, Safari, or any equivalent.
+
+## Installation
+
+Get started by cloning the repository:
+```bash
+git clone https://github.com/Jagroop2001/AcmeRockets.git
+```
+After cloning, open the `index.html` file in your preferred web browser.
+
+# Contributions Guidelines
+
+We highly appreciate and encourage community contributions to elevate the AcmeRockets project. To make your contribution seamless, please adhere to the following guidelines:
+
+1. **Fork the Repository:**
+   - *Fork the project repository* to your GitHub account.
+
+2. **Clone the Forked Repository:**
+   - Clone the forked repository to *your local machine*:
+
+```bash
+git clone https://github.com/yourusername/AcmeRockets.git
+```
+
+3. **Create a New Branch**:
+    - Create a **new branch** for your feature or bug fix:
+
+```bash
+cd /AcmeRockets
+git switch -b your-branch-name
+```
+
+4. **Ask for Assignment**:
+
+    - Review **existing issues** *or* **express your interest in a specific task**.
+
+5. **Make Changes**:
+
+    - *Implement your changes*.
+
+6. **Commit Changes**:
+
+    - *Add* and *commit* your changes:
+
+```bash
+git add .
+git commit -m 'Add a new feature'
+```
+
+7. **Push to the Branch**:
+
+    - **Push** *your changes to the branch on your* **forked repository**:
+
+```bash
+git push -u origin your-branch-name
+```
+
+8. **Open a Pull Request**:
+
+    - Open a **pull request** to propose your changes to the **original repository**.
 
 
+# Code Style
 
-- **Product Showcase**: Dive into details about Acme Rockets' rocket models, complete with pricing information.
-<img width="1083" alt="Screenshot 2024-01-16 at 12 25 29 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/f9845598-5f8a-4493-9a09-e1221377ebe4">
+To maintain a consistent and readable codebase, please adhere to the existing code style and formatting conventions. Consistency in code style helps ensure collaboration and makes the development process smoother.
 
+# Issue Tracker
 
-
-- **Testimonials**: Read testimonials from customers, including renowned figures such as Wile E. Coyote and Buzz Lig
-<img width="962" alt="Screenshot 2024-01-16 at 12 26 00 AM" src="https://github.com/rahat2134/AcmeRockets/assets/136263179/76334cf1-525e-40ad-8d46-6770d33b50fa">
-
+Before diving into new features or fixes, it's crucial to check our [issue tracker](https://github.com/Jagroop2001/AcmeRockets/issues). This step ensures that you are aware of any existing issues or feature requests related to your intended contribution. This proactive approach helps in avoiding duplicate efforts and contributes to an organized development process.
 
 
-- **Contact Form**: Interact with Acme Rockets by using the contact form for inquiries or feedback.
+# Code of Conduct
 
-## Getting Started ##
+We believe in fostering a positive and inclusive community. All contributors are expected to follow our Code of Conduct. This code sets the standard for respectful and collaborative behavior. By adhering to the Code of Conduct, you contribute to creating a welcoming environment for everyone involved in the AcmeRockets project.
 
-### Prerequisites ##
-
-To run the AcmeRockets website locally, ensure you have the following:
-
-- Web Browser (Chrome, Firefox, Safari, etc.)
-
-### Installation ###
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/AcmeRockets.git
-   ```
-
-2. Open the `index.html` file in your preferred web browser.
-
-## Usage ##
-
-Explore the different sections of the website:
-
-- **Home**: Discover Acme Rockets' mission and vision.
-- **Our Rockets**: Explore the variety of rocket models Acme Rockets has to offer.
-- **Testimonials**: Immerse yourself in customer testimonials and experiences.
-- **Contact Us**: Utilize the contact form to connect with Acme Rockets.
-
-<!-- Include any additional instructions or information for users here. -->
-
-## Contribution Guidelines ##
-
-We welcome contributions from the community to enhance and improve the AcmeRockets project. To contribute, please follow these guidelines:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name`.
-3. Ask For Assigning.
-4. First come first serve basis.
-5. Make your changes and commit them: `git commit -m 'Add a new feature'`.
-6. Push to the branch: `git push origin feature/your-feature-name`.
-7. Open a pull request and describe your changes.
-
-### Code Style ###
-
-Please adhere to the existing code style and formatting conventions.
-
-### Issue Tracker ###
-
-Before working on new features or fixes, check the [issue tracker](https://github.com/Jagroop2001/AcmeRockets/issues) for existing issues or feature requests.
-
-### Code of Conduct ###
-
-Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive and inclusive community.
-
-## License ##
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
-
-<!-- Include any additional sections or information relevant to the project. -->
-
-Thank you for your interest in the AcmeRockets project! If you have any questions or feedback, feel free to reach out.
+Thank you for your commitment to making AcmeRockets a great community and project!
 
 Happy coding and rocket exploring! 🚀
