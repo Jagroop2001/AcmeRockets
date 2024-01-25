@@ -1,0 +1,116 @@
+body{
+    background-color: lightgray;
+}
+.contributors-container h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contributors-list
+ {
+   
+list-style-type:none;
+   
+padding-left:0;
+   
+display:grid;
+/* Add this line */
+   
+grid-template-columns:
+repeat(auto-fill,
+minmax(200px,1fr));
+/* Add this line */
+   
+gap:
+20px;
+/* Add this line to add space between grid items */
+  }
+ 
+ 
+.contributor-item {
+   
+display:
+flex;
+   
+flex-direction:
+row;
+   
+align-items:
+center;
+   
+margin-bottom:
+10px;
+  }
+ 
+ 
+.contributor-image {
+    border: 5px solid black; 
+width:100px;
+   padding: 10px;
+height:
+100px;
+   
+border-radius:
+50%;
+   
+margin-right:
+10px;
+  }
+ 
+ 
+.contributor-name {
+   
+font-size:
+20px;
+/* Adjust the font size as needed */
+  }
+ 
+.contributor-name:hover {
+   
+text-decoration:
+underline;
+  }
+ 
+ 
+.contributors-container
+h2{
+   font-family: sans-serif;
+font-size:
+40px;
+   
+font-weight:
+800;
+   
+margin-bottom:
+20px;
+  }
+ 
+.contributors-container
+a{
+   
+text-decoration:
+none;
+   
+color:
+#ffffff;
+   padding: 20px;
+font-size:
+medium;
+  }
+ 
+.contributors-container
+a:hover{
+   
+color:#ffc400;
+  }
+ 
+#contributors-list {
+   
+list-style-type:
+none;
+/* Add this line */
+   
+padding-left:
+0;
+/* Add this line to remove the default padding */
+  }
