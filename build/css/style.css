@@ -965,6 +965,17 @@ video {
   padding-right: 1.5rem;
 }
 
+
+.px-12 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1367,6 +1378,10 @@ html{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity));
 }
+:is(.dark .testim .wrap .dark\:Acme) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 
 @media (min-width: 640px) {
   .sm\:block {
@@ -1431,6 +1446,63 @@ html{
   .md\:w-80 {
     width: 20rem;
   }
+
+}
+#rockets li:hover {
+  background-color: red; 
+  transform: scale(1.09); 
+}
+
+
+#maindiv{
+  margin-top: 14px;
+  gap: 48px;
+}
+
+a:hover{
+     color: #97FFF4;
+}
+#abc{
+  height: 6px;
+}
+#abc2{
+  height: 6px;
+}
+#abc3{
+  height: 6px;
+}
+#pp:hover{
+  #abc{
+    
+    background-color: #97FFF4;
+    transform: scaleX(1.2);
+    transition:   transform 300ms ease-in;
+    cursor: pointer;
+    /* transform: scale(1.1,0.6); */
+    
+    
+  }
+}
+#pp2:hover{
+  #abc2{
+    background-color: #97FFF4;
+    transform: scaleX(1.2);
+    transition: transform 300ms ease-in;
+ 
+    cursor: pointer;
+    /* transform: scale(1.1,0.6); */
+    
+  }
+}
+#pp3:hover{
+  #abc3{
+    background-color: #97FFF4;
+    transform: scaleX(1.2);
+    transition: transform 200ms ease-in;
+    /* transform-origin: left; */
+    cursor: pointer;
+    /* transform: scale(1.1,0.6); */
+    
 
   .md\:flex-row {
     flex-direction: row;
