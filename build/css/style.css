@@ -953,6 +953,14 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-12 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1492,4 +1500,5 @@ a:hover{
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
 
   }
+}
 }
