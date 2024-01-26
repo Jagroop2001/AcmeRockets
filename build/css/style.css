@@ -961,6 +961,7 @@ video {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1363,6 +1364,10 @@ html{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity));
 }
+:is(.dark .testim .wrap .dark\:Acme) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 
 @media (min-width: 640px) {
   .sm\:block {
@@ -1427,7 +1432,7 @@ html{
   .md\:w-80 {
     width: 20rem;
   }
-
+}
 #rockets li:hover {
   background-color: red; 
   transform: scale(1.09); 
