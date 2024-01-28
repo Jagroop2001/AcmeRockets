@@ -23,7 +23,7 @@ body {
   position: relative;
   width: 400px;
   padding: 20px 30px;
-  border-radius: 4.8rem;
+  border-radius: 2.4rem;
   box-shadow:
     inset 0 0 50px #fff,
     inset 20px 0 80px #f0f,
@@ -44,7 +44,7 @@ body {
 }
 
 .container button {
-  border-radius: 4.8rem;
+  border-radius: 2.4rem;
   background: #342a37;
   box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.22) inset,
     0px 6px 8px 0px rgba(255, 255, 255, 0.1) inset,
@@ -67,7 +67,7 @@ body {
 .container .edit {
   width: 100px;
   font-size: 16px;
-  border-radius: 4.8rem;
+  border-radius: 2.4rem;
   color: white;
   font-weight: 500;
   cursor: pointer;
@@ -83,7 +83,7 @@ body {
 .container .Home {
   width: 100px;
   font-size: 16px;
-  border-radius: 4.8rem;
+  border-radius: 2.4rem;
   color: white;
   font-weight: 500;
   cursor: pointer;

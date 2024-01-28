@@ -75,21 +75,21 @@ body {
   left: 30vw;
   border-radius: 4.8rem;
   height: 500px;
-  width: 500px;
+  width: 550px;
   z-index: 100000;
 }
 
 iframe {
-  border-radius: 4.8rem;
+  border-radius: 0.8rem;
   height: 500px;
-  width: 500px;
+  width: 550px;
 }
 
 .ifream_btn {
   position: absolute;
-  border-radius: 4.8rem;
-  top: 20px;
-  right: 20px;
+  border-radius: 0.8rem;
+  top: 10px;
+  right: 10px;
   background-color: white;
   font-size: 2rem;
   width: 40px;
@@ -1483,7 +1483,7 @@ html {
   }
 
 }
-}
+
 nav{
   width: 100%;
   padding: 12px 0;
