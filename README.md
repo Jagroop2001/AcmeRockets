@@ -99,10 +99,16 @@ To maintain a consistent and readable codebase, please adhere to the existing co
 Before diving into new features or fixes, it's crucial to check our [issue tracker](https://github.com/Jagroop2001/AcmeRockets/issues). This step ensures that you are aware of any existing issues or feature requests related to your intended contribution. This proactive approach helps in avoiding duplicate efforts and contributes to an organized development process.
 
 
+
+
 # Code of Conduct
 
-We believe in fostering a positive and inclusive community. All contributors are expected to follow our Code of Conduct. This code sets the standard for respectful and collaborative behavior. By adhering to the Code of Conduct, you contribute to creating a welcoming environment for everyone involved in the AcmeRockets project.
+We believe in fostering a positive and inclusive community. All contributors are expected to follow our [Code of Conduct](./CODE_OF_CONDUCT.md). This code sets the standard for respectful and collaborative behavior. By adhering to the Code of Conduct, you contribute to creating a welcoming environment for everyone involved in the AcmeRockets project.
 
 Thank you for your commitment to making AcmeRockets a great community and project!
+
+# License
+
+This project is under [MIT License](./MIT_LICENSE.md)
 
 Happy coding and rocket exploring! 🚀
