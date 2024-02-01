@@ -303,7 +303,23 @@
         </div>
       </div>
     </section>
-    
+    <a href="#" class="to-top-btn">
+      <i class="fas fa-chevron-up"></i>
+  </a>
+  <script>
+    const toptopbtn = document.querySelector(".to-top-btn")
+    window.addEventListener("scroll", ()=>{
+  if(window.pageYOffset > 100)
+  {
+    toptopbtn.classList.add("active");
+  }
+  else
+  {
+    toptopbtn.classList.remove("active");
+  }
+})
+  </script>
+
   </main>
 
   <footer id="footer" class="bg-teal-700 text-xl text-white">
@@ -344,8 +360,8 @@
 
 
   <!-- go to top section -->
-  <button id="goToTopBtn" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></button>
-  <script src="js/GoToTop.js"></script>
+  <!-- <button id="goToTopBtn" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/GoToTop.js"></script> -->
   <!-- go to top section -->
 
 
