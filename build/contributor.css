@@ -113,3 +113,13 @@ padding-left:
 0;
 /* Add this line to remove the default padding */
   }
+  #contributors-list li:hover {
+    color: #52df96;
+    transform: translateY(-4px);
+    transition: 0.3s;
+  }
+  
+  #contributors-list li:hover .contributor-image {
+    transform: scale(1.2);
+  }
+  
