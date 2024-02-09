@@ -16,9 +16,22 @@
     .rocket-image {
       transition: transform 0.3s ease;
     }
-  
+
     .rocket-image:hover {
-      transform: scale(3); /* Increase the scale to enlarge the image */
+      transform: scale(3);
+      /* Increase the scale to enlarge the image */
+    }
+
+    .reveal {
+      position: relative;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: 1.5s all linear;
+    }
+
+    .reveal.active {
+      transform: translateY(0);
+      opacity: 1;
     }
   </style>
   <title>Acme Rockets</title>
@@ -61,14 +74,14 @@
 
 
         <nav class="hidden  md:block " aria-label="main">
-          <a href="#rockets" >Our Rockets</a>
-          <a href="#about" >About Us</a>
-          <a href="#testimonials" >Testimonials</a>
-          <a href="feedback.html" >Rate Us</a>
-          <a href="#contact" >Contact Us</a>
-          <a href="contributor.html" >Contributors</a>
+          <a href="#rockets">Our Rockets</a>
+          <a href="#about">About Us</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="feedback.html">Rate Us</a>
+          <a href="#contact">Contact Us</a>
+          <a href="contributor.html">Contributors</a>
           <a href="feed.html">Feedback</a>
-        
+
 
           <button id="theme-toggle" type="button"
             class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
@@ -123,30 +136,34 @@
     </section>
 
     <hr class="mx-auto mb-1 w-1/2 bg-black dark:bg-white" />
-   
+
     <section id="about" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
-    <h2 class="mb-10 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
-      About Us
-    </h2>
-          <div class="my-12  bg-transparent py-6 px-2 dark:bg-black ">
-          <p class="mt-2 text-center text-4xl text-black dark:text-white  ">
-            At Acme Rockets, we're at the forefront of rocket technology, crafting vessels that are propelling humanity into the next century and beyond. Our team is dedicated to designing and building rockets that redefine space exploration, blending cutting-edge technology with a passion for discovery.When you think of the future of space travel, think Acme Rockets. Join us on this extraordinary journey as we soar to new heights, unlocking the mysteries of the cosmos one launch at a time.
+      <h2 class="mb-10 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl reveal">
+        About Us
+      </h2>
+      <div class="my-12  bg-transparent py-6 px-2 dark:bg-black ">
+        <p class="mt-2 text-center text-4xl text-black dark:text-white  reveal">
+          At Acme Rockets, we're at the forefront of rocket technology, crafting vessels that are propelling humanity
+          into the next century and beyond. Our team is dedicated to designing and building rockets that redefine space
+          exploration, blending cutting-edge technology with a passion for discovery.When you think of the future of
+          space travel, think Acme Rockets. Join us on this extraordinary journey as we soar to new heights, unlocking
+          the mysteries of the cosmos one launch at a time.
         </p>
-    </div>
+      </div>
     </section>
-    
+
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
-     
 
 
-    <section id="rockets" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+
+    <section id="rockets" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6 reveal">
       <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
         Our Rockets
       </h2>
       <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
         <li
           class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6 cursor-pointer">
-          <img src="./img/rocketman.png" alt="Explorer" class="mb-6 w-1/2 rocket-image"/>
+          <img src="./img/rocketman.png" alt="Explorer" class="mb-6 w-1/2 rocket-image" />
           <h3 class="text-center text-3xl text-slate-900 dark:text-white">
             Explorer
           </h3>
@@ -189,7 +206,7 @@
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
     <section id="testimonials"
-      class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+      class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6 reveal">
       <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
         Testimonials
       </h2>
@@ -246,13 +263,16 @@
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
     <!-- Contact Us -->
-    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6 antialiased">
+    <section id="contact"
+      class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6 antialiased reveal">
       <div class="flex min-h-screen w-full items-center justify-center">
-        <div class="flex w-full max-w-4xl flex-col space-y-6 overflow-hidden rounded-xl bg-teal-700 p-8 text-white shadow-lg sm:p-12 md:flex-row md:space-x-6 md:space-y-0">
+        <div
+          class="flex w-full max-w-4xl flex-col space-y-6 overflow-hidden rounded-xl bg-teal-700 p-8 text-white shadow-lg sm:p-12 md:flex-row md:space-x-6 md:space-y-0">
           <div class="flex flex-col justify-between space-y-8">
             <div>
               <h1 class="mb-6 text-center text-4xl font-bold sm:text-5xl text-white">Contact Us</h1>
-              <p class="text-md text-slate-200">Feel Free to drop us a message with any inquiries or feedback.We're here to assist you!</p>
+              <p class="text-md text-slate-200">Feel Free to drop us a message with any inquiries or feedback.We're here
+                to assist you!</p>
             </div>
             <div class="flex flex-col space-y-6">
               <div class="text-md inline-flex items-center space-x-2">
@@ -270,7 +290,7 @@
             </div>
             <div>
               <a href="#"><ion-icon name="logo-facebook" class="text-2xl hover:text-cyan-200"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-linkedin" class="text-2xl hover:text-cyan-200" ></ion-icon></a>
+              <a href="#"><ion-icon name="logo-linkedin" class="text-2xl hover:text-cyan-200"></ion-icon></a>
               <a href="#"><ion-icon name="logo-twitter" class="text-2xl  hover:text-cyan-200"></ion-icon></a>
               <a href="#"><ion-icon name="logo-instagram" class="text-2xl hover:text-cyan-200"></ion-icon></a>
             </div>
@@ -282,21 +302,26 @@
               <form action="" class="flex flex-col space-y-4">
                 <div>
                   <label for="" class="text-sm">Your name</label>
-                  <input type="text" placeholder="Your name" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                  <input type="text" placeholder="Your name"
+                    class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
                 </div>
                 <div>
                   <label for="" class="text-sm">Email Address </label>
-                  <input type="email" placeholder="Your Email" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                  <input type="email" placeholder="Your Email"
+                    class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
                 </div>
                 <div>
                   <label for="" class="text-sm">Mobile Number</label>
-                  <input type="phone" placeholder="Your number" rows="4" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
+                  <input type="phone" placeholder="Your number" rows="4"
+                    class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600" />
                 </div>
                 <div>
                   <label for="" class="text-sm">Message</label>
-                  <textarea type="phone" placeholder="Your message" class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600"></textarea>
+                  <textarea type="phone" placeholder="Your message"
+                    class="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-teal-600"></textarea>
                 </div>
-                <button class="inline-block self-end rounded-lg bg-teal-700 px-6 py-2 text-sm font-bold uppercase text-white">Send</button>
+                <button
+                  class="inline-block self-end rounded-lg bg-teal-700 px-6 py-2 text-sm font-bold uppercase text-white">Send</button>
               </form>
             </div>
           </div>
@@ -305,24 +330,22 @@
     </section>
     <a href="#" class="to-top-btn">
       <i class="fas fa-chevron-up"></i>
-  </a>
-  <script>
-    const toptopbtn = document.querySelector(".to-top-btn")
-    window.addEventListener("scroll", ()=>{
-  if(window.pageYOffset > 100)
-  {
-    toptopbtn.classList.add("active");
-  }
-  else
-  {
-    toptopbtn.classList.remove("active");
-  }
-})
-  </script>
+    </a>
+    <script>
+      const toptopbtn = document.querySelector(".to-top-btn")
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+          toptopbtn.classList.add("active");
+        }
+        else {
+          toptopbtn.classList.remove("active");
+        }
+      })
+    </script>
 
   </main>
 
-  <footer id="footer" class="bg-teal-700 text-xl text-white">
+  <footer id="footer" class="bg-teal-700 text-xl text-white reveal">
     <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
       <address>
         <h2>Acme Rocket-Powered Products, Inc.</h2>
@@ -340,24 +363,30 @@
       <div class="flex flex-col sm:gap-2">
         <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
         <p class="text-right">All Rights Reserved</p>
-        <p class="text-right">  <a href="./mitLicense.html">MIT License</a></p>
+        <p class="text-right"> <a href="./mitLicense.html">MIT License</a></p>
         <p class="text-right"> <a href="./codeofconduct.html">Code Of Conduct</a></p>
 
-    <section class="" style="padding:50px 100px 50px 100px; display: flex;">
-      <div style="flex: 1; gap: 5px;">
-        <div style="padding-top: 1rem;">
-          <a href="#"><i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i></a>
-          <a href="#"><i class="fa-brands fa-github" style="font-size: 1.25em;margin: 2px;"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin" style="font-size: 1.25em;margin: 2px;"></i></a>
-        </div>
-      </div>
+        <section class="" style="padding:50px 100px 50px 100px; display: flex;">
+          <div style="flex: 1; gap: 5px;">
+            <div style="padding-top: 1rem;">
+              <a href="#"><i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i></a>
+              <a href="#"><i class="fa-brands fa-github" style="font-size: 1.25em;margin: 2px;"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin" style="font-size: 1.25em;margin: 2px;"></i></a>
+            </div>
+          </div>
 
 
 
       </div>
     </section>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../build/js/animation.js"></script>
 
   <!-- go to top section -->
   <!-- <button id="goToTopBtn" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></button>
@@ -384,4 +413,3 @@
 </body>
 
 </html>
-
