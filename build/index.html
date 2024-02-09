@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-ezlrJyRBD9N5ZXUUqNl8XqVAjjc6b3lc1ce6Rrp+9/gs6gKDT3Vl+kD5tr5D2Gff" crossorigin="anonymous">
+
   <!-- <style>
     a:hover {
       opacity: 0.9;
@@ -13,7 +15,7 @@
   </style> -->
   <style>
     /* CSS for image hover effect */
-    .rocket-image {
+        .rocket-image {
       transition: transform 0.3s ease;
     }
   
@@ -86,7 +88,7 @@
         </nav>
       </div>
     </section>
-    <section id="mobile-menu"
+    <section id="mobile-menu" 
       class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
       <!-- <button class="text-8xl self-end px-6">
 
@@ -322,42 +324,39 @@
 
   </main>
 
-  <footer id="footer" class="bg-teal-700 text-xl text-white">
-    <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
-      <address>
-        <h2>Acme Rocket-Powered Products, Inc.</h2>
-        555 Astro Way<br />
-        Fairfield, New Jersey 12345-5555<br />
-        Email:
-        <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a><br />
-        Phone: <a href="tel:+15555555555">(555) 555-5555</a>
-      </address>
-      <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
-        <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
-        <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-        <a href="#contact" class="hover:opacity-90">Contact Us</a>
-      </nav>
-      <div class="flex flex-col sm:gap-2">
-        <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
-        <p class="text-right">All Rights Reserved</p>
-        <p class="text-right">  <a href="./mitLicense.html">MIT License</a></p>
-        <p class="text-right"> <a href="./codeofconduct.html">Code Of Conduct</a></p>
+  <footer>
+    <div class="footer-address">
+        <p>
+            Address<br>
+            Acme Rocket-Powered Products, Inc.<br>
+            555 Astro Way<br>
+            Fairfield, New Jersey 12345-5555<br>
+            Email: <a id="foot" href="mailto:inquiries@acmerockets.com">inquiries@acmerockets.com</a><br>
+            Phone: (555) 555-5555
+        </p>
+    </div>
 
-    <section class="" style="padding:50px 100px 50px 100px; display: flex;">
-      <div style="flex: 1; gap: 5px;">
-        <div style="padding-top: 1rem;">
-          <a href="#"><i class="fab fa-x-twitter" style="font-size: 1.25em;margin: 2px;"></i></a>
-          <a href="#"><i class="fa-brands fa-github" style="font-size: 1.25em;margin: 2px;"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin" style="font-size: 1.25em;margin: 2px;"></i></a>
+    <div class="footer-navigation">
+        <nav id="foot-links">
+            <ul>
+                <li ><a id="foot" href="#">MIT License</a></li>
+                <li ><a id="foot" href="#">Code Of Conduct</a></li>
+                <li ><a id="foot" href="#">Contact Us</a></li>
+                <li ><a id="foot" href="#">Testimonials</a></li>
+                <li ><a id="foot" href="#">Our Rockets</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer-social">
+        <div class="social-icons">
+            <!-- Replace the placeholder URLs with your actual social media links -->
+            <a href="#" target="_blank" id="foot"><img src="social-icon1.png" alt="Social Icon 1"></a>
+            <a href="#" target="_blank" id="foot"><img src="social-icon2.png" alt="Social Icon 2"></a>
+            <!-- Add more social icons as needed -->
         </div>
-      </div>
-
-
-
-      </div>
-    </section>
-  </footer>
-
+    </div>
+</footer>
 
   <!-- go to top section -->
   <!-- <button id="goToTopBtn" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></button>
