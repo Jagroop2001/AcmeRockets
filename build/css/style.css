@@ -1528,17 +1528,17 @@ a:hover{
 
 #foot-links{
     border: none;
-    background-color: #333;
+    background-color: #ecf0f3;
     box-shadow: none;
 }
  #foot{
   border: none;
   box-shadow: none;
-  color: white;
+  color: black;
 }
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #ecf0f3;
+  color: black;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -1604,7 +1604,7 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-a{
+ a{
   margin:0 8px;
   text-decoration: none;
   font-size: 18px;
