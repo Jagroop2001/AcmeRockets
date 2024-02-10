@@ -197,7 +197,25 @@ margin-right: 20px;
 }
 
 .footer-social {
-flex: 1;
+    display: flex;
+    justify-content:space-evenly;
+
+    margin: auto;
+    align-items: center; 
+    
+
+    
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row; 
+
+}
+
+.social-icons i{
+  padding: 50px 20px;
+  
 }
 
 .footer-address p {
@@ -217,7 +235,7 @@ margin-bottom: 8px;
 
 .footer-navigation a {
 text-decoration: none;
-color: #fff;
+color: #42ab99;
 }
 
 .footer-social img {
