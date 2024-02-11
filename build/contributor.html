@@ -10,6 +10,19 @@
 <body>
     <div class="contributors-container">
         <h2>Contributors</h2>
+        <img src="/build/img/moon.png" alt="sun.png" id="modeChanger">
+          <script>
+            var modeChanger = document.getElementById("modeChanger");
+            modeChanger.onclick = function(){
+              document.body.classList.toggle("dark-theme");
+              if (document.body.classList.contains("dark-theme")) {
+                modeChanger.src = "/build/img/sun.png";
+              }
+              else{
+                modeChanger.src = "/build/img/moon.png";
+              }
+            }
+          </script>
         <ul id="contributors-list">
 
         </ul>
