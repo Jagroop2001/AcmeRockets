@@ -1,7 +1,27 @@
-body{
-    background-color: lightgray;
+:root {
+  --background: lightgray;
+  --color: #000000;
 }
+
+.dark-theme {
+  --background: #2d2626;
+  --color: #ffffff;
+}
+
+#modeChanger{
+  width: 3vw;
+  position: relative;
+  left: 92vw;
+  top: -9vh;
+  z-index: 100;
+  cursor: pointer;
+}
+body{
+  background-color: var(--background);
+}
+
 .contributors-container h2{
+  color: var(--color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +64,7 @@ margin-bottom:
  
  
 .contributor-image {
-    border: 5px solid black; 
+    border: 5px solid var(--color); 
 width:100px;
    padding: 10px;
 height:100px;
@@ -91,7 +111,7 @@ text-decoration:
 none;
    
 color:
-#ffffff;
+var(--color);
    padding: 20px;
 font-size:
 medium;
@@ -122,4 +142,6 @@ padding-left:
   #contributors-list li:hover .contributor-image {
     transform: scale(1.2);
   }
-  
+  p{
+    color: var(--color);
+  }
