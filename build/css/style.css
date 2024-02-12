@@ -6,7 +6,7 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *,
 ::before,
 ::after {
@@ -167,7 +167,7 @@ sup {
 
 /* footer start */
 
-#foot-links{
+/* #foot-links{
   border: none;
   background-color: #ecf0f3;
   box-shadow: none;
@@ -240,8 +240,8 @@ color: #42ab99;
 
 .footer-social img {
 width: 30px; /* Adjust the width as needed */
-margin-right: 10px;
-}
+/* margin-right: 10px; */
+/* } */ */
 
 
 /* footer end */
@@ -1620,7 +1620,7 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-a{
+.menu a{
   margin:0 8px;
   text-decoration: none;
   font-size: 18px;
@@ -1633,7 +1633,7 @@ a{
   position: relative;
   transition: all 0.3s ease;
 }
-a:hover:before{
+.menu a:hover:before{
   content: '';
   position: absolute;
   top: 0;
@@ -1643,7 +1643,7 @@ a:hover:before{
   box-shadow: inset -3px -3px 7px #ffffff,
               inset 3px 3px 5px #ceced1;
 }
-a:hover{
+.menu a:hover{
   color: #3498db;
 }
 
@@ -1673,3 +1673,175 @@ a:hover{
   pointer-events: auto;
   opacity: 1;
 }
+
+/* NEW FOOTER */
+
+
+.newFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 4, 45);
+  color: white;
+  padding: 1rem 4rem;
+  gap: 5rem ;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  width: 100%;
+}
+
+.footer-sec1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 1.5rem;
+}
+
+.footer-sec1 h1{
+  align-self: flex-start;
+  font-size: 2.4rem;
+}
+.footer-sec1 p{
+  align-self: flex-start;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.footer-sec2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-sec2 h2{
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 2.8rem;
+}
+
+.footer-sec2 a{
+  box-shadow: none;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  width: 100%;
+  margin-left: 0;
+  text-align: left;
+  padding: 0.5rem ;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-sec2 li{
+  padding: 0.5rem 0;
+}
+
+.footer-sec2 li:hover{
+  transform: scale(1.1);
+  transform: scale(1.04) translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-sec3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 25%;
+  gap: 2.5rem;
+}
+
+.footer-sec3 h2{
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+}
+
+.content{
+  align-self: flex-start;
+}
+
+.content p{
+  box-shadow: none;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  width: 100%;
+  margin-left: 0;
+  text-align: left;
+  padding: 0.2rem ;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.icon-section {
+  align-self: flex-start;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.icon-section a{
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-section a:hover{
+  transform: scale(1.1);
+  transform: scale(1.1) translateY(-5px);
+  transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width : 712px){
+    .newFooter{
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 1rem;
+    }
+
+    .footer-sec1, .footer-sec2 , .footer-sec3{
+      width: 80%;
+    }
+
+    .footer-sec1 h1,p,.icon-section{
+      align-self: center;
+    }
+
+    .footer-sec2 h2{
+      align-self: center;
+      font-size: 2rem;
+    }
+
+    .footer-sec2 ul{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .footer-sec2 li{
+      text-align: center;
+    }
+
+    .footer-sec3 h2 , .content {
+      align-self: center;
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer-sec3 h2{
+      font-size: 2rem;
+    }
+
+    .content p{
+      text-align: center;
+    }
+}
+/* NEW FOOTER */
