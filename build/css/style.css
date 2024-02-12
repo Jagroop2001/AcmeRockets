@@ -6,7 +6,6 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
-
 *,
 ::before,
 ::after {
@@ -167,7 +166,7 @@ sup {
 
 /* footer start */
 
-#foot-links{
+/* #foot-links{
   border: none;
   background-color: #ecf0f3;
   box-shadow: none;
@@ -240,8 +239,8 @@ color: #42ab99;
 
 .footer-social img {
 width: 30px; /* Adjust the width as needed */
-margin-right: 10px;
-}
+/* margin-right: 10px; */
+/* } */ */
 
 
 /* footer end */
@@ -1643,7 +1642,7 @@ a:hover:before{
   box-shadow: inset -3px -3px 7px #ffffff,
               inset 3px 3px 5px #ceced1;
 }
-a:hover{
+.menu a:hover{
   color: #3498db;
 }
 
@@ -1673,3 +1672,4 @@ a:hover{
   pointer-events: auto;
   opacity: 1;
 }
+

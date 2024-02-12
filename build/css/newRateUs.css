@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.outer-container {
+    height: auto;
+    width: auto;
+    padding: 3rem;
+    background: #ffb347;
+    background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);
+    background: linear-gradient(to right, #ffcc33, #ffb347);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    height: 40vh;
+    width: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+
+.emoji-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* width: 100%; */
+    align-self: flex-end;
+    gap: 2rem;
+}
+
+.emoji-section div {
+    font-size: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rating-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    gap: 5.5rem;
+}
+
+
+.rating-section div {
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.rating-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rating-description>.message {
+    margin-right: 1.5rem;
+}
+
+.rating-description div {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit-section a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-section a:hover {
+    background-color: rgb(254, 221, 36);
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-section {
+    margin-bottom: 1rem;
+    align-self: flex-end;
+    transition: all 0.2s ease-in-out;
+}
