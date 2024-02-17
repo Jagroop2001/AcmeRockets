@@ -1531,9 +1531,12 @@ html{
 
 }
 #rockets li:hover {
-  background-color: red; 
+  background-color: rgb(255, 255, 255); 
   transform: scale(1.09); 
+  
+  
 }
+
 
 
 #maindiv{
@@ -1846,3 +1849,26 @@ nav{
     }
 }
 /* NEW FOOTER */
+
+body {
+  margin: 20px;
+  background-image: linear-gradient(to right, rgb(68, 224, 211),rgb(62, 224, 135))
+}
+
+
+
+h1{
+  text-align: center;
+  margin-top: 1px;
+  padding: 12px;
+  background-color: rgb(240, 224, 157);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+ 
+}
+
+
+
+li.hover\:border-blue-500:hover {
+  border-color: #ff0055; /* Change the color to the desired hover color */
+  border-width: 5px; /* Set the border width to 5px on hover */
+}
