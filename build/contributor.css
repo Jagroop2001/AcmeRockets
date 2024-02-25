@@ -145,3 +145,44 @@ padding-left:
   p{
     color: var(--color);
   }
+
+  .to-top-btn
+{
+  background-color: black;
+  font-size: 32px;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f2f2f2;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+.to-top-btn.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+::-webkit-scrollbar{
+  width: 1rem;
+  height: 0.5rem;
+}
+::-webkit-scrollbar-track{
+  background:  white;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(69, 69, 69);
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:rgb(35, 35, 35);
+}

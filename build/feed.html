@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,20 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <style>
+        @import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css');
+
+        @import url('https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
         body {
             font-family: Arial, sans-serif;
             background-color: #8ed4b0;
             margin: 0;
             padding: 0;
+        }
+
+        body.dark {
+            background-color: #130f40;
+            background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
         }
 
         .form-container {
@@ -28,6 +38,11 @@
         h2 {
             text-align: center;
             color: #333;
+        }
+
+        h2.dark {
+            text-align: center;
+            color: #fff;
         }
 
         label {
@@ -58,8 +73,33 @@
         #submitButton:hover {
             background-color: #45a049;
         }
+
+        .toggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 2rem;
+            margin-top: 0.3rem;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        label.dark,
+        p.dark {
+            color: #fff;
+        }
     </style>
 </head>
+
 <body>
     <header class="sticky top-0 z-10 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
         <section class="mx-auto flex items-center justify-between p-4">
@@ -101,6 +141,10 @@
             </nav>
         </section>
     </header>
+
+    <button class="toggle">
+        <i class="fi fi-rs-moon" style="font-size: 1.3rem;border-radius: 50%; position: relative; top: 9%;"></i>
+    </button>
     <div class="form-container">
         <h2>Feedback Form</h2>
         <p>Feel free to contact us, we will get back to you asap!</p>
@@ -152,23 +196,26 @@
             </div>
         </div>
     </footer>
+
+    <script src="../build/js/feed.js"></script>
     <script>
         function submitForm() {
-            
+
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var subject = document.getElementById("subject").value;
             //var message = document.getElementById("message").value;
 
-            
-            if (name.trim() === '' || email.trim() === '' || subject.trim() === '' ) {
+
+            if (name.trim() === '' || email.trim() === '' || subject.trim() === '') {
                 alert("Please fill out all required fields.");
             } else {
-               
+
                 window.location.href = "submit.html";
             }
         }
     </script>
 
 </body>
+
 </html>
