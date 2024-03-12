@@ -1,0 +1,24 @@
+#root {
+	background-color: black;
+}
+/* CSS for image hover effect */
+.rocket-image {
+	transition: transform 0.3s ease;
+}
+
+.rocket-image:hover {
+	transform: scale(3);
+	/* Increase the scale to enlarge the image */
+}
+
+.reveal {
+	position: relative;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 1.5s all linear;
+}
+
+.reveal.active {
+	transform: translateY(0);
+	opacity: 1;
+}
