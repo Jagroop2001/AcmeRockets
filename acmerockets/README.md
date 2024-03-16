@@ -21,7 +21,6 @@
     <img src="./documentation_source/contact.png" alt="Alt text" style="width: 23%; max-width: 100%; height: auto;" />
 </div>
 
-
 ---
 
 # Getting Started
@@ -33,9 +32,11 @@
 ## Installation
 
 Get started by cloning the repository:
+
 ```bash
 git clone https://github.com/Jagroop2001/AcmeRockets.git
 ```
+
 After cloning, open the `index.html` file in your preferred web browser.
 
 # Contributions Guidelines
@@ -89,7 +90,6 @@ git push -u origin your-branch-name
 
     - Open a **pull request** to propose your changes to the **original repository**.
 
-
 # Code Style
 
 To maintain a consistent and readable codebase, please adhere to the existing code style and formatting conventions. Consistency in code style helps ensure collaboration and makes the development process smoother.
@@ -97,9 +97,6 @@ To maintain a consistent and readable codebase, please adhere to the existing co
 # Issue Tracker
 
 Before diving into new features or fixes, it's crucial to check our [issue tracker](https://github.com/Jagroop2001/AcmeRockets/issues). This step ensures that you are aware of any existing issues or feature requests related to your intended contribution. This proactive approach helps in avoiding duplicate efforts and contributes to an organized development process.
-
-
-
 
 # Code of Conduct
 
