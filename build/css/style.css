@@ -1519,7 +1519,29 @@ html{
     display: grid;
   }
 
+
+::-webkit-scrollbar{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+::-webkit-scrollbar-track{
+  background:  hsl(120, 100%, 96%);
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+::-webkit-scrollbar-thumb{
+  background: #17A589;
+  border: .25em solid hsl(120, 23%, 83%);
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+  background:#064d3f;
+}
+
+
+
   .xl\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
+

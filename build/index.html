@@ -37,6 +37,51 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="css/style.css" />
 
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+  <header class="sticky top-0 z-10 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
+    <section class="mx-auto flex items-center justify-between p-4 ">
+        
+        <div class="flex">
+          
+         
+          
+          <span class="p-4 text-2xl font-bold text-indigo-700 dark:text-indigo-300">Acme Rockets</span>
+        </div>
+        <div class="menu flex items-center">
+            <button id="hamburger-button" class="block md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-black dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <nav class="hidden md:flex space-x-4 font-sans text-gray-500 dark:text-gray-400">
+                <a href="#rockets" class="smooth-scroll">Our Rockets</a>
+                <a href="#about" class="smooth-scroll">About Us</a>
+                <a href="#testimonials" class="smooth-scroll">Testimonials</a>
+                <a href="./newRateUs.html" class="smooth-scroll">Rate Us</a>
+                <a href="#contact" class="smooth-scroll">Contact Us</a>
+                <a href="contributor.html" class="smooth-scroll">Contributors</a>
+                <a href="feed.html" class="smooth-scroll">Feedback</a>
+                <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </section>
+    <section id="mobile-menu" class="top-16 md:hidden absolute w-full bg-black text-white">
+        <nav class="flex flex-col items-center py-8" aria-label="mobile">
+            <a href="#hero" class="w-full py-4 text-center hover:opacity-90">Home</a>
+            <a href="#rockets" class="w-full py-4 text-center hover:opacity-90">Our Rockets</a>
+            <a href="#testimonials" class="w-full py-4 text-center hover:opacity-90">Testimonials</a>
+            <a href="#contact" class="w-full py-4 text-center hover:opacity-90">Contact Us</a>
+            <a href="#footer" class="w-full py-4 text-center hover:opacity-90">Legal</a>
+        </nav>
+    </section>
+</header>
 		<link rel="mitlicense" href="mitLicense.html" />
 		<link rel="codeofconduct" href="./codeofconduct.html" />
 
@@ -327,6 +372,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="../build/js/animation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
 
 		<script>
 			const scriptURL = 'https://script.google.com/macros/s/AKfycbxsK3h5yTiJAXXsERmhpPTV1o5potl-0Mx1WNWm4fpiNm7PepJHonV-Mz35ljDAfBchoQ/exec'
